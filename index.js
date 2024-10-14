@@ -8,7 +8,12 @@ import cookieParser from 'cookie-parser';
 // import middlewares
 import logger from './middleware/logger.js';
 
+//create tables
+import createUsersTable from './models/userModels.js';
+
 // import routes
+import userRoutes from './routes/userRoutes.js';
+import bookRoutes from './routes/bookRoutes.js';
 
 // load environment variables
 dotenv.config();
@@ -36,7 +41,12 @@ app.set('views', path.join(PATH, 'views'));
 // use middlewares
 app.use(logger);
 
+//use tables
+createUsersTable();
+
 // use routes
+app.use('/api', userRoutes);
+app.use('/api', bookRoutes);
 
 // handle 404
 app.use('*', (req, res) => {

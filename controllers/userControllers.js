@@ -98,7 +98,7 @@ const userControllers = {
     },
     logout: (req, res) => {
         res.clearCookie('token');
-        res.status(302).redirect('api/books');
+        res.status(302).redirect('/api/books');
     }
 };
 

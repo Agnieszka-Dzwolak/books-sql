@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/style.css">
+        <title>All Books</title>
+    </head>
+    <body>
+        <header><h1>Books</h1></header>
+        <main>
+<%- include('./includes/nav.ejs', {token: token}) %>
+
+        <% books.forEach((book)=>{%>
+          <div class="book-container">
+            <h2 class="title">Title: <%= book.title%></h2>
+            <h2 class="author">Author: <%= book.author%></h2>
+            <p class="price">Price: $<%= book.price%></p>
+            <img class="image" src="<%= book.img %>" alt="Image of <%= book.title %>" />
+<br>
+            <button class="btn-details"><a href="/api/books/<%=book.id%>">Details</a></button>
+          </div>
+
+        <%})%>
+        </main>
+    </body>
+</html>

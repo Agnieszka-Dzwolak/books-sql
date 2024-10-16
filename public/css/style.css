@@ -1,0 +1,133 @@
+/* General styles */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2d2d2d;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    color: #ffcccb;
+    font-size: 2rem;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #2d2d2d;
+    padding: 0.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav a {
+    color: #b0eacd;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #ffb3c1;
+}
+
+/* Form styles */
+form {
+    background-color: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 1rem auto;
+    box-shadow: 0px 0px 10px #ffcccb;
+}
+
+form label {
+    color: #b0eacd;
+    display: block;
+    margin-top: 1rem;
+}
+
+form input,
+form button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    border: none;
+}
+
+form input {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+form button {
+    background-color: #ffb3c1;
+    color: #121212;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #ffcccb;
+}
+
+/* Book container styles */
+.book-container {
+    background-color: #2e2e2e;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.book-container h2 {
+    color: #b0eacd;
+}
+
+.book-container p {
+    color: #ffd3b6;
+}
+
+.book-container img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.btn-details,
+.btn-back-to-all {
+    background-color: #ffb3c1;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: #121212;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-details a,
+.btn-back-to-all a {
+    color: #121212;
+    text-decoration: none;
+}
+
+.btn-details:hover,
+.btn-back-to-all:hover {
+    background-color: #ffcccb;
+}

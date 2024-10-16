@@ -10,6 +10,7 @@ import logger from './middleware/logger.js';
 
 //create tables
 import createUsersTable from './models/userModels.js';
+import createBooksTable from './models/bookModels.js';
 
 // import routes
 import userRoutes from './routes/userRoutes.js';
@@ -43,6 +44,7 @@ app.use(logger);
 
 //use tables
 createUsersTable();
+createBooksTable();
 
 // use routes
 app.use('/api', userRoutes);
